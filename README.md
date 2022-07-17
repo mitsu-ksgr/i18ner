@@ -32,7 +32,7 @@ $ docker-compose run --rm app yarn fmt:fix
 ```
 
 
-## Built with ...
+## Built with
 - [Vite](https://vitejs.dev)
 - [Svelte](https://svelte.dev/)
 - Linter ... [ESLint](https://eslint.org/)
