@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    build: ./
+    tty: true
+    environment:
+      - YARN_VERSION=1.22.19
+    volumes:
+      - ./:/home/node/app
+      - node_modules:/home/node/app/node_modules
+    ports:
+      - 3080:3000
+      - 4173:4173
+
+volumes:
+  node_modules:
+
