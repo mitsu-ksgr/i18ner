@@ -32,7 +32,8 @@ readonly TMP_DIR=$(mktemp -d "/tmp/${SCRIPT_NAME}.tmp.XXXXXX")
 # main
 #
 main() {
-    cd $(dirname $0)
+    # cd root dir
+    cd $(dirname $0)/..
 
     # checkout main branch
     git fetch origin $BRANCH_MAIN
