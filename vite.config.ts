@@ -12,6 +12,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  base: './',
   plugins: [
     svelte({
       configFile: './svelte.config.js',
